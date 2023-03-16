@@ -1,0 +1,58 @@
+[
+  {
+    "job_id": 1,
+    "job_title": "Job title 1",
+    "company_name": "Company name 1",
+    "job_description": "This is a very brief description of the role's day-to-day responsibilities.",
+    "application_status": "applied"
+  },
+  {
+    "job_id": 2,
+    "job_title": "Job title 2",
+    "company_name": "Company name 2",
+    "job_description": "This is a very brief description of the role's day-to-day responsibilities.",
+    "application_status": ""
+  },
+  {
+    "job_id": 3,
+    "job_title": "Job title 3",
+    "company_name": "Company name 3",
+    "job_description": "This is a very brief description of the role's day-to-day responsibilities.",
+    "application_status": ""
+  },
+  {
+    "job_id": 4,
+    "job_title": "Job title 4",
+    "company_name": "Company name 4",
+    "job_description": "This is a very brief description of the role's day-to-day responsibilities.",
+    "application_status": "applied"
+  },
+  {
+    "job_id": 5,
+    "job_title": "Job title 5",
+    "company_name": "Company name 5",
+    "job_description": "This is a very brief description of the role's day-to-day responsibilities.",
+    "application_status": ""
+  },
+  {
+    "job_id": 6,
+    "job_title": "Job title 6",
+    "company_name": "Company name 7",
+    "job_description": "This is a very brief description of the role's day-to-day responsibilities.",
+    "application_status": ""
+  },
+  {
+    "job_id": 7,
+    "job_title": "Job title 7",
+    "company_name": "Company name 7",
+    "job_description": "This is a very brief description of the role's day-to-day responsibilities.",
+    "application_status": ""
+  },
+  {
+    "job_id": 8,
+    "job_title": "Job title 8",
+    "company_name": "Company name 8",
+    "job_description": "This is a very brief description of the role's day-to-day responsibilities.",
+    "application_status": ""
+  }
+]
