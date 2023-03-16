@@ -13,7 +13,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import com.seek.assignment.android.components.text.TextView
+import com.seek.assignment.android.pages.applications.myApplicationsRoute
 import com.seek.assignment.android.pages.home.homeViewRoute
+import com.seek.assignment.android.pages.profile.profileViewRoute
 import com.seek.assignment.android.theme.AssignmentAppTheme
 import com.seek.assignment.android.theme.toColor
 import com.seek.assignment.android.theme.toResource
@@ -28,10 +30,9 @@ import com.seek.assignment.core.service.LanguageService
 @Composable
 fun BottomNavBar(
     navController: NavController, items: List<NavigationItem> = listOf(
-        OneAppNavigationItem.Home,
-//        OneAppNavigationItem.Tasks,
-//        OneAppNavigationItem.Feed,
-//        OneAppNavigationItem.Profile
+        AppNavigationItem.Home,
+        AppNavigationItem.MyApplications,
+        AppNavigationItem.Profile
     )
 ) {
     BottomNavigation(
@@ -103,7 +104,7 @@ open class NavigationItem(var route: String,
                           var iconActive: Int,
                           val iconInactive: Int)
 
-sealed class OneAppNavigationItem(
+sealed class AppNavigationItem(
     route: String,
     title: String,
     iconActive: Int,
@@ -116,24 +117,17 @@ sealed class OneAppNavigationItem(
         AssignmentAppTheme.resource.navbarHomeInactive.toResource()
     )
 
-//    object Tasks : NavigationItem(
-//        tasksViewRoute,
-//        LanguageService().getResourceString(StringKey.homeTasks),
-//        OneAppTheme.resource.navbarTasksActive.toResource(),
-//        OneAppTheme.resource.navbarTasksInactive.toResource()
-//    )
-//
-//    object Feed : NavigationItem(
-//        feedViewRoute,
-//        LanguageService().getResourceString(StringKey.homeFeed),
-//        OneAppTheme.resource.navbarFeedActive.toResource(),
-//        OneAppTheme.resource.navbarFeedInactive.toResource()
-//    )
-//
-//    object Profile : NavigationItem(
-//        profileViewRoute,
-//        LanguageService().getResourceString(StringKey.homeProfile),
-//        OneAppTheme.resource.navbarProfileActive.toResource(),
-//        OneAppTheme.resource.navbarProfileInactive.toResource()
-//    )
+    object MyApplications : NavigationItem(
+        myApplicationsRoute,
+        LanguageService().getResourceString(StringKey.homeMyApplications),
+        AssignmentAppTheme.resource.navbarMyApplicationsActive.toResource(),
+        AssignmentAppTheme.resource.navbarMyApplicationsInactive.toResource()
+    )
+
+    object Profile : NavigationItem(
+        profileViewRoute,
+        LanguageService().getResourceString(StringKey.homeProfile),
+        AssignmentAppTheme.resource.navbarProfileActive.toResource(),
+        AssignmentAppTheme.resource.navbarProfileInactive.toResource()
+    )
 }

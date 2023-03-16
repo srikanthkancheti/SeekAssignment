@@ -6,6 +6,10 @@ import com.seek.assignment.branding.localTokens.LocalResourceTokens
 object AssignmentAppResourcesSeek : LocalResourceTokens {
     override val navbarHomeActive = GlobalResourceTokens.navbarHomeActive
     override val navbarHomeInactive = GlobalResourceTokens.navbarHomeInactive
+    override val navbarMyApplicationsActive = GlobalResourceTokens.navbarMyApplicationsActive
+    override val navbarMyApplicationsInactive = GlobalResourceTokens.navbarMyApplicationsInactive
+    override val navbarProfileActive = GlobalResourceTokens.navbarProfileActive
+    override val navbarProfileInactive = GlobalResourceTokens.navbarProfileInactive
     override val error = GlobalResourceTokens.error
     override val info: String = GlobalResourceTokens.info
     override val moreIcon: String = GlobalResourceTokens.moreIcon

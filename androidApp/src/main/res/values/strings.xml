@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string formatted="false" name="Job_Postings">Job Postings</string>
+    <string formatted="false" name="My_Applications">My Applications</string>
+    <string formatted="false" name="Profile">profile</string>
     <string formatted="false" name="Home_Home">Home</string>
+    <string formatted="false" name="Home_My_Applications">My Applications</string>
+    <string formatted="false" name="Home_Profile">Profile</string>
     <string formatted="false" name="Ok_Button">OK</string>
 </resources>

@@ -16,8 +16,12 @@ import com.google.accompanist.navigation.animation.composable
 import com.google.accompanist.navigation.animation.rememberAnimatedNavController
 import com.seek.assignment.android.components.bars.Snackbar
 import com.seek.assignment.android.core.LaunchAppNavigation
+import com.seek.assignment.android.pages.applications.MyApplicationsView
+import com.seek.assignment.android.pages.applications.myApplicationsRoute
 import com.seek.assignment.android.pages.home.HomeView
 import com.seek.assignment.android.pages.home.homeViewRoute
+import com.seek.assignment.android.pages.profile.ProfileView
+import com.seek.assignment.android.pages.profile.profileViewRoute
 import com.seek.assignment.android.theme.AssignmentAppTheme
 import com.seek.assignment.android.theme.toColor
 import com.seek.assignment.core.service.LanguageService
@@ -59,13 +63,13 @@ fun MainNavigation() {
             })
         }
 
-//        composable(feedViewRoute) {
-//            FeedView(navController = navController)
-//        }
-//
-//        composable(profileViewRoute) {
-//            ProfileView(navController = navController)
-//        }
+        composable(myApplicationsRoute) {
+            MyApplicationsView(navController = navController)
+        }
+
+        composable(profileViewRoute) {
+            ProfileView(navController = navController)
+        }
     }
 
     Box(modifier = Modifier.fillMaxSize()) {

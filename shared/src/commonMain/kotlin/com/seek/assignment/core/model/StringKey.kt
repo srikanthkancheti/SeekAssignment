@@ -15,6 +15,11 @@ public abstract class StringKeyInterface {
 
 public object StringKey : StringKeyInterface() {
     public val jobPostings: StringKeyItem = StringKeyItem(Key("Job_Postings"))
+    public val myApplications: StringKeyItem = StringKeyItem(Key("My_Applications"))
+    public val profile: StringKeyItem = StringKeyItem(Key("Profile"))
     public val homeHome: StringKeyItem = StringKeyItem(Key("Home_Home"))
+    public val homeMyApplications: StringKeyItem = StringKeyItem(Key("Home_My_Applications"))
+    public val homeProfile: StringKeyItem = StringKeyItem(Key("Home_Profile"))
+
     public val okButton: StringKeyItem = StringKeyItem(Key("Ok_Button"))
 }
